@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useState} from "react";
+import ResultItem from './ResultItem';
 
 
 export default function Results(props) {
@@ -7,9 +8,19 @@ export default function Results(props) {
   return (
 
     <ul>
-      <li>
-        {props.searchResults ? props.searchResults[0].Title : "---"}
-      </li>
+      { props.searchResults ? (
+
+        props.searchResults.map((elem) => (
+          <ResultItem 
+            poster={elem.Poster}
+            title={elem.Title}
+            year={elem.Year}
+            nominee={props.nominee}
+            setNominee={props.setNominee}
+          />
+        ))
+      ) : ''
+      }
     </ul>
 
   )

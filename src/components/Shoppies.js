@@ -6,6 +6,7 @@ import './Shoppies.css';
 export default function Shoppies(props) {
   const [title, setTitle] = useState('');
   const [searchResults, setSearchResults] = useState();
+  const [nominee, setNominee] = useState([]);
 
 
   return (
@@ -24,6 +25,8 @@ export default function Shoppies(props) {
           <Results
             searchResults = {searchResults}
             setSearchResults = {setSearchResults}
+            nominee = {nominee}
+            setNominee = {setNominee}
           />
         </section>
         <section>
