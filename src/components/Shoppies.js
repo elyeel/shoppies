@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
+import Title from './Title'
+import Results from './Results';
 import './Shoppies.css';
-import Title from './Title';
 
 export default function Shoppies(props) {
   const [title, setTitle] = useState('');
+  const [searchResults, setSearchResults] = useState();
 
 
   return (
@@ -13,11 +15,16 @@ export default function Shoppies(props) {
         <Title 
           title = {title}
           setTitle = {setTitle}
+          searchResults = {searchResults}
+          setSearchResults = {setSearchResults}
         />
       </div>
       <div>
         <section>
-
+          <Results
+            searchResults = {searchResults}
+            setSearchResults = {setSearchResults}
+          />
         </section>
         <section>
 
