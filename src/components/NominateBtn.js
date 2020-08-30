@@ -3,29 +3,35 @@ import React from "react";
 export default function NominateBtn(props) {
   const nominateMovie = event => {
     event.preventDefault();
-    props.setNominee([
-      ...props.nominee,
-      {
+    props.setNominateBtnDisabled(true);
+    console.log(props.nominateBtnDisabled)
+    if (props.nominee == null) {
+      props.setNominee([{
         poster: props.poster,
         title: props.title,
-        year: props.year
-      }
-    ])
+        year: props.year,
+        nominateBtnDisabled: props.nominateBtnDisabled,
+        setNominateBtnDisabled: props.setNominateBtnDisabled
+      }])
+    } else {
+
+      props.setNominee([
+        ...props.nominee,
+        {
+          poster: props.poster,
+          title: props.title,
+          year: props.year,
+          nominateBtnDisabled: props.nominateBtnDisabled,
+          setNominateBtnDisabled: props.setNominateBtnDisabled
+
+        }
+      ])
+    }
+
   }
 
-  // function nominateMovie(poster, title, year) {
-  //   props.setNominee([
-  //     props.nominee,
-  //     {
-  //       poster,
-  //       title,
-  //       year,
-  //     },
-  //   ]);
-  // }
-
   return (
-    <button onClick={nominateMovie()}>
+    <button onClick={nominateMovie} disabled={props.nominateBtnDisabled}>
       Nominate
     </button>
   );

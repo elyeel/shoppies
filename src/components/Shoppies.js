@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
 import Title from './Title'
 import Results from './Results';
+import { Nominations } from './Nominations'
 import './Shoppies.css';
 
 export default function Shoppies(props) {
   const [title, setTitle] = useState('');
   const [searchResults, setSearchResults] = useState();
-  const [nominee, setNominee] = useState([]);
+  const [nominee, setNominee] = useState();
 
 
   return (
@@ -30,7 +31,10 @@ export default function Shoppies(props) {
           />
         </section>
         <section>
-
+          <Nominations 
+            nominee = {nominee}
+            setNominee = {setNominee}
+          />
         </section>
       </div>
     </main>

@@ -10,8 +10,9 @@ export default function Results(props) {
     <ul>
       { props.searchResults ? (
 
-        props.searchResults.map((elem) => (
+        props.searchResults.map((elem, i) => (
           <ResultItem 
+            id={i}
             poster={elem.Poster}
             title={elem.Title}
             year={elem.Year}
