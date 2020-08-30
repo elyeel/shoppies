@@ -16,20 +16,26 @@ export function Nominations (props) {
   // }
 
   return (
+    <>
+    { props.nominee && props.nominee.length >= 5 && <h3>5 Nominations Selected</h3> } 
     <ul>
       {props.nominee ? (
         props.nominee.map((nominated, index) => (
           <NominationItem 
             key={index}
+            idx={index}
             title={nominated.title}
             poster={nominated.poster}
             year={nominated.year}
             nominateBtnDisabled={nominated.nominateBtnDisabled}
             setNominateBtnDisabled={nominated.setNominateBtnDisabled}
+            nominee={props.nominee}
+            setNominee={props.setNominee}
           />
         ))
       )
       : ''}
     </ul>
+    </>
   )
 }
