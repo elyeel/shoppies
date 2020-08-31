@@ -20,12 +20,16 @@ h1 {
 }
 
 .result_search {
-  border: 1px solid whitesmoke;
   margin: 10px;
-  border-radius: 10px;
   flex: 1.5;
   overflow: hidden;
 }
+
+/* .result_search:hover {
+  border-radius: 10px;
+  border: 1px solid whitesmoke;
+
+} */
 
 .nominations {
   display: flexbox;
