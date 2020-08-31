@@ -11,9 +11,9 @@ export default function Shoppies(props) {
 
 
   return (
-    <main>
+    <div className='main'>
       <h1>Shoppies</h1>
-      <div>
+      <div className='search'>
         <Title 
           title = {title}
           setTitle = {setTitle}
@@ -21,22 +21,22 @@ export default function Shoppies(props) {
           setSearchResults = {setSearchResults}
         />
       </div>
-      <div>
-        <section>
+      <div className='result_container'>
+        <div className='result_search'>
           <Results
             searchResults = {searchResults}
             setSearchResults = {setSearchResults}
             nominee = {nominee}
             setNominee = {setNominee}
           />
-        </section>
-        <section>
+        </div>
+        <div className='nominations'>
           <Nominations 
             nominee = {nominee}
             setNominee = {setNominee}
           />
-        </section>
+        </div>
       </div>
-    </main>
+    </div>
   )
 }

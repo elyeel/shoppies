@@ -7,6 +7,7 @@ export default function NominationItem (props) {
     if (props.nominee.length > 1) props.setNominee(props.nominee.filter(nom => {return nom.id !== props.idx}));
     else props.setNominee([]);
     console.log(props.nominee.length);
+    props.setNominateBtnDisabled(false);
   }
 
   return (

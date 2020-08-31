@@ -6,6 +6,7 @@ export default function ResultItem(props) {
 
   return (
     <li>
+      <div className='result_item'>
       <h3>
         <span>
           <img src={props.poster} alt="Poster"></img>
@@ -21,6 +22,7 @@ export default function ResultItem(props) {
           setNominateBtnDisabled={setNominateBtnDisabled}
         />
       </h3>
+      </div>
     </li>
   );
 }

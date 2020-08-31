@@ -1,0 +1,7 @@
+.result {
+  flex-direction: row;
+}
+
+ul {
+  display: flex;
+}

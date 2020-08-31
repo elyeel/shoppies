@@ -1,0 +1,36 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #181725;
+  padding: 2rem;
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+h1 {
+  color:#6b7986;
+}
+
+.result_container {
+  display: flex;
+  /* border: 1px solid whitesmoke;  */
+  border-radius: 5px;
+  justify-content: space-evenly;
+}
+
+.result_search {
+  border: 1px solid whitesmoke;
+  margin: 10px;
+  border-radius: 10px;
+  flex: 1.5;
+  overflow: hidden;
+}
+
+.nominations {
+  display: flexbox;
+  border: 1px solid grey;
+  margin: 10px;
+  border-radius: 10px;
+  flex: 1;
+}

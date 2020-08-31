@@ -1,0 +1,27 @@
+input {
+  margin: 0;
+}
+
+input[type="text"] {
+  background-color: #201f2f;
+  border: 0;
+  padding: 0.5rem 0.5rem 0.5rem 3rem;
+  color: #6b7986;
+  font-weight: 700;
+  font-size: 1.5rem;
+  width: 100%;
+  background-image: url("/search.png");
+  background-repeat: no-repeat;
+  background-size: auto 50%;
+  background-position: 1rem 50%;
+}
+
+input[type="text"]:focus {
+  background-color: #e6e6e6;
+  color: #201f2f;
+}
+
+.title_search {
+  color: #7c858d;
+  margin: 0 auto;
+}

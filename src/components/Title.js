@@ -29,9 +29,10 @@ export default function Title(props) {
   };
 
   return (
-    <form autoComplete="off" onSubmit={(event) => event.preventDefault()}>
-      <h3>Movie Title</h3>
+    <form className='form' autoComplete="off" onSubmit={(event) => event.preventDefault()}>
+      <h3 className='title_search'>Movie Title</h3>
       <input
+        className='searchbar'
         onChange={(event) => {
           props.setTitle(event.target.value);
           searchMovies(props.title);
