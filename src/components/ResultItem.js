@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import NominateBtn from "./NominateBtn";
+import './ResultItem.css';
 
 export default function ResultItem(props) {
   const [nominateBtnDisabled, setNominateBtnDisabled] = useState(false);
 
   return (
-    <li>
-      <div className="result_item">
-        <h3>
-          <span>
-            <img src={props.poster} alt="Poster"></img>
-          </span>
-          {props.title} ({props.year})
+    <article className="result_item">
+      <img className="result_poster" src={props.poster} alt='Poster N/A'></img>
+      <div className="result_info">
+        <div className='title'>{props.title}</div>
+        <div className='year'>{props.year}</div>
+        <div>
           <NominateBtn
             nominee={props.nominee}
             setNominee={props.setNominee}
@@ -21,8 +21,8 @@ export default function ResultItem(props) {
             nominateBtnDisabled={nominateBtnDisabled}
             setNominateBtnDisabled={setNominateBtnDisabled}
           />
-        </h3>
+        </div>
       </div>
-    </li>
+    </article>
   );
 }

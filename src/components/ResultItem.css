@@ -1,9 +1,36 @@
 .result_item {
-  height: 100px;
+  display: flex;
+  margin-bottom: 0.5rem;
+  flex-direction: row;
 }
 
+.result_poster {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  flex: 1;
+}
+
+.result_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding-left: 1rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  background: #201f2f;
+  overflow: hidden;
+}
+
+.title {
+  color: rgb(217, 252, 248);
+}
+
+.year {
+  color: rgb(220, 226, 227);
+}
 img {
-  max-height: 100px;
+  max-height: 180px;
 }
 
 .result_item:hover {

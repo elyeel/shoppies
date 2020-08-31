@@ -1,4 +1,5 @@
 import React, {useEffect} from "react";
+import './NominateBtn.css';
 
 export default function NominateBtn(props) {
   const nominateMovie = event => {
@@ -35,7 +36,7 @@ export default function NominateBtn(props) {
   }
 
   return (
-    <button onClick={nominateMovie} disabled={props.nominateBtnDisabled}>
+    <button className='nominatebtn' onClick={nominateMovie} disabled={props.nominateBtnDisabled}>
       Nominate
     </button>
   );

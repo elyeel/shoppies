@@ -1,5 +1,6 @@
 import React from "react";
 import ResultItem from './ResultItem';
+import './Results.css';
 
 
 export default function Results(props) {
@@ -7,7 +8,7 @@ export default function Results(props) {
 
   return (
 
-    <ul>
+    <div className='results'>
       { props.searchResults ? (
 
         props.searchResults.map((elem, i) => (
@@ -22,7 +23,7 @@ export default function Results(props) {
         ))
       ) : ''
       }
-    </ul>
+    </div>
 
   )
 }

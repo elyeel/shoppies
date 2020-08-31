@@ -12,7 +12,9 @@ export default function Shoppies(props) {
 
   return (
     <div className='main'>
-      <h1>Shoppies</h1>
+          
+      { nominee && nominee.length >=5 && <img src='./Vector-Text-Banner-PNG-Transparent-Image.png' alt='5 Nominations Selected'/>}
+      <h1>The Shoppies</h1>
       <div className='search'>
         <Title 
           title = {title}

@@ -21,7 +21,7 @@ h1 {
 
 .result_search {
   margin: 10px;
-  flex: 1.5;
+  flex: 1;
   overflow: hidden;
 }
 
@@ -33,7 +33,6 @@ h1 {
 
 .nominations {
   display: flexbox;
-  border: 1px solid grey;
   margin: 10px;
   border-radius: 10px;
   flex: 1;

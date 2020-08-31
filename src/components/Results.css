@@ -1,7 +1,4 @@
-.result {
-  flex-direction: row;
-}
-
-ul {
+.results {
   display: flex;
+  flex-direction: column;
 }

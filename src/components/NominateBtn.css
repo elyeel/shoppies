@@ -1,0 +1,14 @@
+.nominatebtn {
+  margin: 15px auto;
+  height: 2rem;
+  width: 10rem;
+  background-color: rgb(136, 218, 136);
+  border-radius: 15px;
+  font-style: oblique;
+}
+
+.nominatebtn:hover {
+  color: grey;
+  font-size: 1rem;
+  background-color: palegreen;
+}
