@@ -5,9 +5,9 @@ export default function NominationItem (props) {
   // remove nomination function here
   const removeNomineeFromList = (event) => {
     event.preventDefault();
-    if (props.nominee.length > 1) props.setNominee(props.nominee.filter(nom => {return nom.id !== props.idx}));
+    if (props.nominee.length > 1) props.setNominee(props.nominee.filter(nom => {return nom.imdbID !== props.imdbID}));
     else props.setNominee([]);
-    console.log(props.nominee.length);
+    // console.log(props.nominee.length);
     props.setNominateBtnDisabled(false);
   }
 

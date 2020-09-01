@@ -10,7 +10,7 @@ export default function NominateBtn(props) {
     // console.log(props.nominateBtnDisabled)
     if (props.nominee == null) {
       props.setNominee([{
-        id: 0,
+        imdbID: props.imdbID,
         poster: props.poster,
         title: props.title,
         year: props.year,
@@ -18,11 +18,11 @@ export default function NominateBtn(props) {
         setNominateBtnDisabled: props.setNominateBtnDisabled
       }])
     } else {
-      const id = props.nominee.length;
+      // const id = props.nominee.length;
       props.setNominee([
         ...props.nominee,
         {
-          id,
+          imdbID: props.imdbID,
           poster: props.poster,
           title: props.title,
           year: props.year,

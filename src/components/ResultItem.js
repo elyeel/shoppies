@@ -15,6 +15,7 @@ export default function ResultItem(props) {
           <NominateBtn
             nominee={props.nominee}
             setNominee={props.setNominee}
+            imdbID={props.imdbID}
             poster={props.poster}
             title={props.title}
             year={props.year}

@@ -14,7 +14,7 @@ export default function Results(props) {
         props.searchResults.map((elem, i) => (
           <ResultItem 
             key={i}
-            id={i}
+            imdbID={elem.imdbID}
             poster={elem.Poster}
             title={elem.Title}
             year={elem.Year}

@@ -33,7 +33,7 @@ export default function Nominations(props) {
           ? props.nominee.map((nominated, index) => (
               <NominationItem
                 key={index}
-                idx={index}
+                imdbID={nominated.imdbID}
                 title={nominated.title}
                 poster={nominated.poster}
                 year={nominated.year}
