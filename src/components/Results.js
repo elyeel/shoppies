@@ -13,6 +13,7 @@ export default function Results(props) {
 
         props.searchResults.map((elem, i) => (
           <ResultItem 
+            key={i}
             id={i}
             poster={elem.Poster}
             title={elem.Title}

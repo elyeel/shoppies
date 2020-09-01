@@ -11,7 +11,7 @@ export default function Title(props) {
         method: "get",
         url: `http://www.omdbapi.com/?s=${title}&apikey=${key}`,
         headers: {
-          Cookie: "__cfduid=d5783c75bc68c46c08343513a788f7ac01598409813",
+          // Cookie: "__cfduid=d5783c75bc68c46c08343513a788f7ac01598409813",
         },
       };
 

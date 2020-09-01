@@ -14,8 +14,8 @@ export default function Shoppies(props) {
     <div className='main'>
           
       {/* { nominee && nominee.length >=5 && <img src='./Vector-Text-Banner-PNG-Transparent-Image.png' alt='5 Nominations Selected'/>} */}
-      <h1>The Shoppies</h1>
       <div className='search'>
+      <h1>The Shoppies</h1>
         <Title 
           title = {title}
           setTitle = {setTitle}

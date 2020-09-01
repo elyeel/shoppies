@@ -1,5 +1,5 @@
 input {
-  margin: 0;
+  margin: 0 auto;
 }
 
 input[type="text"] {
@@ -14,6 +14,7 @@ input[type="text"] {
   background-repeat: no-repeat;
   background-size: auto 50%;
   background-position: 1rem 50%;
+  box-sizing: border-box;
 }
 
 input[type="text"]:focus {

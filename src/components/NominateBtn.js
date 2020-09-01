@@ -7,7 +7,7 @@ export default function NominateBtn(props) {
     // useEffect(() => {console.log(props.nominateBtnDisabled)})
     props.setNominateBtnDisabled(true);
     // useEffect here?
-    console.log(props.nominateBtnDisabled)
+    // console.log(props.nominateBtnDisabled)
     if (props.nominee == null) {
       props.setNominee([{
         id: 0,
