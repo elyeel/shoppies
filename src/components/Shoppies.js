@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Title from './Title'
 import Results from './Results';
-import { Nominations } from './Nominations'
+import Nominations from './Nominations'
 import './Shoppies.css';
 
 export default function Shoppies(props) {
@@ -13,7 +13,7 @@ export default function Shoppies(props) {
   return (
     <div className='main'>
           
-      { nominee && nominee.length >=5 && <img src='./Vector-Text-Banner-PNG-Transparent-Image.png' alt='5 Nominations Selected'/>}
+      {/* { nominee && nominee.length >=5 && <img src='./Vector-Text-Banner-PNG-Transparent-Image.png' alt='5 Nominations Selected'/>} */}
       <h1>The Shoppies</h1>
       <div className='search'>
         <Title 

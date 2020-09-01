@@ -1,9 +1,13 @@
 .selected {
   font-size: 2rem;
   color: green;
-  
+  text-align: center;
 }
 
 .banner {
-  /* background-image: './Ribbon-Banner-PNG-Transparent.png'; */
+  background-image: url('/Ribbon-Banner-PNG-Transparent.png');
+}
+
+h2 {
+  color: #7c858d;
 }

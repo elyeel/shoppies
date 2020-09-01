@@ -1,4 +1,5 @@
 import React from 'react';
+import './NominationItem.css'
 
 export default function NominationItem (props) {
   // remove nomination function here
@@ -11,10 +12,10 @@ export default function NominationItem (props) {
   }
 
   return (
-    <li>
-      <span>{props.title}</span>
-      <span>{props.year}</span>
-      <button onClick={removeNomineeFromList}>Remove</button>
+    <li className='nominee'>
+      <span>{props.title}</span>,
+      <span> {props.year} </span>  
+      <button className='removebtn' onClick={removeNomineeFromList}>Remove</button>
     </li>
   )
 }

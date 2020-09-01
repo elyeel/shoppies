@@ -1,0 +1,20 @@
+.nominee {
+  color: rgb(217, 252, 248);
+  font-size: 1.2rem;
+  list-style-type: '🍿';
+}
+
+.removebtn {
+  background-image: url('/trash.png');
+  background-size: auto 70%;
+  background-repeat: no-repeat;
+  background-position: 1rem 40%;
+  width: 7rem;
+  border-radius: 10px;
+  background-color: limegreen;
+}
+
+.removebtn:hover {
+  background-color: lightgreen;
+  border-radius: 10px;
+}

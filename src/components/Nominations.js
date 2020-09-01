@@ -2,7 +2,7 @@ import React from "react";
 import NominationItem from "./NominationItem";
 import "./Nominations.css";
 
-export function Nominations(props) {
+export default function Nominations(props) {
   // const createNomination = () => {
   //   if (props.nominee[0]) {
   //     props.nominee.map((nominated, index) => {
@@ -19,11 +19,15 @@ export function Nominations(props) {
   return (
     <>
       {props.nominee && props.nominee.length >= 5 && (
-        <div className='banner'>
-          <img src='./Vector-Text-Banner-PNG-Transparent-Image.png' alt='5 Nominations Selected'/>
-          <h3 className="selected">5 Nominations Selected</h3>
+        <div className="banner">
+          {/* <img src='./Vector-Text-Banner-PNG-Transparent-Image.png' alt='5 Nominations Selected'/> */}
+          <h3 className="selected">{props.nominee.length} Nominations Selected</h3>
         </div>
       )}
+      <div className='nom_header'>
+        <h2>Nominations List:</h2>
+      </div>
+
       <ul>
         {props.nominee
           ? props.nominee.map((nominated, index) => (
