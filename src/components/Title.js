@@ -1,32 +1,18 @@
-import React from "react";
-import axios from 'axios';
+import React, { useEffect } from "react";
 import "./Title.css";
-const key = process.env.REACT_APP_APIKEY;
-
+import {searchMovies, useDebounce} from "./helpers/helper"
 
 export default function Title(props) {
-  const searchMovies = async (title) => {
-    if (title.length > 3) {
-      const config = {
-        method: "get",
-        url: `http://www.omdbapi.com/?s=${title}&apikey=${key}`,
-        headers: {
-          // Cookie: "__cfduid=d5783c75bc68c46c08343513a788f7ac01598409813",
-        },
-      };
 
-      axios(config)
-        .then(function (response) {
-          props.setSearchResults(response.data.Search);
-          // console.log(JSON.stringify(response.status));
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
-    } else {
-      console.log("Not long enough movie title string to search");
+  // search movie title and using debounce to wait for timeout before searching
+
+  const debouncedSearchTitle = useDebounce(props.title, 1000);
+  // console.log(debouncedSearchTitle);
+  useEffect(() => {
+    if (debouncedSearchTitle) {
+      searchMovies(debouncedSearchTitle, props.setSearchResults);
     }
-  };
+  }, [debouncedSearchTitle]);
 
   return (
     <form className='form' autoComplete="off" onSubmit={(event) => event.preventDefault()}>
@@ -35,7 +21,6 @@ export default function Title(props) {
         className='searchbar'
         onChange={(event) => {
           props.setTitle(event.target.value);
-          searchMovies(props.title);
         }}
         name="title"
         type="text"
