@@ -25,4 +25,22 @@ input[type="text"]:focus {
 .title_search {
   color: #7c858d;
   margin: 0 auto;
+  display: flex;
+}
+
+.spinner {
+  animation: rotate 1s linear infinite;
+  height: 1rem;
+  filter: invert(50%);
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.searching {
+  color: grey;
 }

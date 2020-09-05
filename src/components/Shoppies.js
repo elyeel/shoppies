@@ -8,7 +8,7 @@ export default function Shoppies(props) {
   const [title, setTitle] = useState('');
   const [searchResults, setSearchResults] = useState();
   const [nominee, setNominee] = useState();
-
+  const [searching, setSearching] = useState(false);
 
   return (
     <div className='main'>
@@ -21,11 +21,15 @@ export default function Shoppies(props) {
           setTitle = {setTitle}
           searchResults = {searchResults}
           setSearchResults = {setSearchResults}
+          searching = {searching}
+          setSearching = {setSearching}
         />
       </div>
       <div className='result_container'>
         <div className='result_search'>
           <Results
+            searching = {searching}
+            setSearching = {setSearching}
             searchResults = {searchResults}
             setSearchResults = {setSearchResults}
             nominee = {nominee}
