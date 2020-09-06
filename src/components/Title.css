@@ -29,7 +29,7 @@ input[type="text"]:focus {
 }
 
 .spinner {
-  animation: rotate 1s linear infinite;
+  animation: rotate 2s linear infinite;
   height: 1rem;
   filter: invert(50%);
 }

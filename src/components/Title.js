@@ -6,13 +6,14 @@ export default function Title(props) {
   // search movie title and using debounce to wait for timeout before searching
 
   const debouncedSearchTitle = useDebounce(props.title, 1000);
+  const {setSearchResults, setSearching} = props;
   // console.log(debouncedSearchTitle);
   useEffect(() => {
     if (debouncedSearchTitle) {
-      searchMovies(debouncedSearchTitle, props.setSearchResults);
+      searchMovies(debouncedSearchTitle, setSearchResults);
     }
-    if (props.setSearchResults.length > 0) props.setSearching(false);
-  }, [debouncedSearchTitle]);
+    if (setSearchResults.length > 0) setSearching(false);
+  }, [debouncedSearchTitle, setSearchResults, setSearching]);
 
   return (
     <form
