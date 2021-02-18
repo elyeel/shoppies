@@ -6,7 +6,7 @@
 }
 
 .removebtn {
-  background-image: url('/trash.png');
+  background-image: url('trash.png');
   background-size: auto 70%;
   background-repeat: no-repeat;
   background-position: 1rem 40%;
