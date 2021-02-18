@@ -1,6 +1,9 @@
 # Shoppies
 ## A Challenge Project
 
+A simple movie title search, select, and nominate up to 5 titles from the selected.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
