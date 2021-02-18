@@ -1,54 +1,53 @@
 {
-  "name": "shoppies",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.5",
-    "@testing-library/user-event": "^12.7.1",
-    "dotenv": "^8.2.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "^4.0.2",
-    "react-styleguidist": "^11.1.5",
-    "serve": "^11.3.2"
-  },
-  "scripts": {
-    "dev": "react-scripts start",
-    "start": "serve -s build",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public",
-    "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@babel/core": "^7.12.17",
-    "@storybook/addon-actions": "^6.1.18",
-    "@storybook/addon-essentials": "^6.1.18",
-    "@storybook/addon-links": "^6.1.18",
-    "@storybook/node-logger": "^6.1.18",
-    "@storybook/preset-create-react-app": "^3.1.6",
-    "@storybook/react": "^6.1.18",
-    "axios": "^0.21.1",
-    "babel-loader": "^8.2.2",
-    "react-is": "^17.0.1"
-  }
+	"name": "shoppies",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@testing-library/jest-dom": "^5.11.9",
+		"@testing-library/react": "^11.2.5",
+		"@testing-library/user-event": "^12.7.1",
+		"dotenv": "^8.2.0",
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1",
+		"react-scripts": "^4.0.2",
+		"react-styleguidist": "^11.1.5",
+		"serve": "^11.3.2"
+	},
+	"scripts": {
+		"dev": "react-scripts start",
+		"start": "serve -s build",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"storybook": "start-storybook -p 6006 -s public",
+		"build-storybook": "build-storybook -s public",
+		"styleguide": "styleguidist server",
+		"styleguide:build": "styleguidist build"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@babel/core": "^7.12.17",
+		"@storybook/addon-actions": "^6.1.18",
+		"@storybook/addon-essentials": "^6.1.18",
+		"@storybook/addon-links": "^6.1.18",
+		"@storybook/node-logger": "^6.1.18",
+		"@storybook/preset-create-react-app": "^3.1.6",
+		"@storybook/react": "^6.1.18",
+		"axios": "^0.21.1",
+		"react-is": "^17.0.1"
+	}
 }
